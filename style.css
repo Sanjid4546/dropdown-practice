@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+
+}
+.container{
+    width: 1300px;
+    margin: auto;
+
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+
+}
+.text-right{
+    text-align: right;
+    
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+::selection{
+    color: red;
+    background: aqua;
+}
+/* header section */
+.header{
+    background: #3498db;
+
+
+}
+.header-logo a img {
+	width: 200px;
+
+	margin-top: 6px;
+}
+.header-primary{
+
+}
+.header-primary ul{
+
+
+}
+.header-primary ul li {
+	display: inline-block;
+    margin-left: -4px;
+    position: relative;;
+
+}
+.header-primary ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 14px 25px;
+	display: block;
+	font-size: 20px;
+    border-right: 1px solid black;
+    transition: .5s;
+}
+.header-primary ul li:last-child a{
+    border-right: none;
+}
+
+.header-primary ul li a:hover{
+    background: #2980b9;
+}
+
+.header-primary ul li:hover > a{
+    background: #2980b9;
+
+}
+/* drop down manu */
+
+.header-primary ul li ul {
+	position: absolute;
+	top: 103%;
+	left: 0;
+	width: 202px;
+	background: #3498db;
+	text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin:top center ;
+}
+
+.header-primary ul li:hover > ul{
+
+    opacity: 1;
+    visibility: visible;
+    transform:scaleY(1) ;
+
+}
+
+.header-primary ul li ul li{
+    display: block;
+    margin-left: 0;
+    border-top: 1px solid black;
+
+}
+.header-primary ul li ul li a{
+    border-right: none;
+    display: block;
+}
+
+
+.header-primary ul li ul li ul {
+	top: -1px;
+	left: 100%;
+	opacity: 0;
+	visibility: hidden;
+}
+.header-primary ul li ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+
+}
+/* third dropdown */
+.header-primary ul li ul li ul li ul {
+	top: -1px;
+	left: 100%;
+}
